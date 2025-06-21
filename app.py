@@ -35,7 +35,7 @@ def one_hot(label, device):
 # === Load Model ===
 device = torch.device('cpu')
 model = CVAE()
-model.load_state_dict(torch.load("models/cvae_mnist.pt", map_location=device))
+model.load_state_dict(torch.load("cvae_mnist.pt", map_location=device))
 model.eval()
 
 # === Streamlit UI ===
